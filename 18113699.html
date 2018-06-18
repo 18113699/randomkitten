@@ -1,0 +1,89 @@
+<!doctype html> <!-- this means it is an HTML5 code-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=content-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Merry Christmas!! </title>
+ <style>
+ *{box-sizing:border-box;}
+ .a-m-1{width:50%;}
+ .a-m-2{width:50%;}
+ @media only screen and (min-width:600px){
+ .a-1{width:50%;}
+ .a-2{width:50%;}
+ }
+ @media only screen and (min-width: 900px){
+ .a-c-1{width:50%;}
+ .a-c-2{width:50%;}
+ }
+  body{
+     min-width: 100%;
+    height: 1000px;
+      background-image:url("1122.jpg");
+        background-size:cover;
+      background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+  }
+  div{
+    text-align:center;
+      margin-left:25%;
+      margin-right:25%;
+      
+  }
+  h1{
+      text-align:center;
+      font-size:300%;
+      color:yellow;
+      font-family:courier;
+  }
+  
+  div.b{
+    padding:15px;
+    color:white;
+    background-color:tomato;
+  }
+  h2{
+    text-align:center;
+    font-size:auto;
+    color:red;
+    
+    font-family:courier;
+  }
+  </style>
+</head>
+<body>
+  <div class="a-m-1 a-1 a-c-1">
+    <h1>Merry Christmas!!</h1>
+    </div>
+    <div class="a-m-2 a-2 a-c-2">
+      <img id="tree" width="100%" alt="trees" src="1125.jpg">
+       <div class="b">
+        <h2 onclick="Here()" id="Here" > Click here!! bro </h2>
+        <button onclick="Yes()"> Okay!! bro    </button>
+        <button onclick="No()"> No..I don't want to </button> 
+        <button onclick="reset()"> Reset </button> 
+      </div>
+<script type="text/Javascript">
+  function Here()
+    {
+      document.getElementById("Here").innerHTML="Let's decorate the Christmas tree!"; 
+    }
+  function Yes()
+  {
+  alert("Very Good!! bro :)");
+  document.getElementById("tree").src="1123.jpg";  
+  }
+  function No()
+  {
+  alert("What a disappointment bro..X(");
+  document.getElementById("tree").src="1124.jpg";
+  }
+  function reset()
+  {
+    document.getElementById("tree").src="1125.jpg"; 
+  }
+</script>
+</body>
+</html>
